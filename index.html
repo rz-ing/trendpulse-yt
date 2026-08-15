@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendPulse YT - Intelligence & Real-Time Analytics Tool for YouTube Creators</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../icons/icon-48.png" type="image/png">
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <div class="brand-icon">📈</div>
+        <span class="brand-name">TrendPulse YT</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="navFeatures">Funcionalidades</a></li>
+        <li><a href="#comparison" data-i18n="navComparison">Comparativa</a></li>
+        <li><a href="#pricing" data-i18n="navPricing">Precios</a></li>
+        <li><a href="#faq" data-i18n="navFaq">Preguntas Frecuentes</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <!-- Language Switcher -->
+        <div class="lang-selector">
+          <button class="lang-btn" id="lang-btn">🇪🇸 ES ▾</button>
+          <ul class="lang-menu" id="lang-menu">
+            <li class="lang-item" data-lang="es">🇪🇸 Español</li>
+            <li class="lang-item" data-lang="en">🇺🇸 English</li>
+            <li class="lang-item" data-lang="pt">🇧🇷 Português</li>
+          </ul>
+        </div>
+
+        <a href="#pricing" class="btn btn-primary" data-i18n="navBuy">Descargar / Comprar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="badge-tag" data-i18n="heroBadge">⚡ Herramienta #1 de Inteligencia para Creadores de YouTube</div>
+      
+      <h1 class="hero-title" data-i18n="heroTitle">
+        Monitorea <span class="gradient-text">Vistas Por Hora (VPH)</span> en Tiempo Real y Domina tu Nicho
+      </h1>
+
+      <p class="hero-subtitle" data-i18n="heroSubtitle">
+        Descubre la velocidad de crecimiento de cualquier video de YouTube, compara tu canal con la competencia, analiza patrones virales y multiplica tus ingresos.
+      </p>
+
+      <div class="hero-cta-box">
+        <a href="#pricing" class="btn btn-flame btn-buy" data-plan="PRO" data-i18n="btnBuyPro">🔥 Obtener Licencia PRO ($50)</a>
+        <a href="#pricing" class="btn btn-secondary btn-buy" data-plan="BASIC" data-i18n="btnBuyBasic">⚡ Comprar Versión Básica ($25)</a>
+      </div>
+
+      <div class="hero-guarantee" data-i18n="heroGuarantee">
+        ✓ Licencia de Por Vida (Sin suscripciones) &nbsp;•&nbsp; ✓ Instalador 1-Clic para Windows &nbsp;•&nbsp; ✓ Garantía 30 Días
+      </div>
+
+      <!-- App Screen Mockup Preview -->
+      <div class="hero-demo-box">
+        <div class="demo-frame">
+          <div class="demo-screen">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 12px;">
+              <div style="display: flex; align-items: center; gap: 8px; font-weight: 800;">
+                <span style="background: var(--gradient-flame); padding: 4px 10px; border-radius: 20px; font-size: 11px; color: #fff;">🔥 EN TENDENCIA</span>
+                <span style="color: var(--text-muted); font-size: 13px;">"Cómo Romper el Algoritmo de YouTube en 2026"</span>
+              </div>
+              <span style="font-size: 11px; font-weight: 700; color: var(--green-success);">⭐ PRO ACTIVADO</span>
+            </div>
+
+            <div class="demo-stats-grid">
+              <div class="demo-card highlight">
+                <div class="demo-label" data-i18n="statVph">🚀 VPH (Vistas/Hora)</div>
+                <div class="demo-value" style="color: var(--cyan-accent);">14,820 /h</div>
+              </div>
+              <div class="demo-card">
+                <div class="demo-label" data-i18n="statTotalViews">👁️ Vistas Totales</div>
+                <div class="demo-value">284,500</div>
+              </div>
+              <div class="demo-card">
+                <div class="demo-label" data-i18n="statSeo">🎯 SEO Score</div>
+                <div class="demo-value" style="color: var(--green-success);">94/100</div>
+              </div>
+              <div class="demo-card">
+                <div class="demo-label" data-i18n="statEng">💬 Engagement Rate</div>
+                <div class="demo-value">5.82%</div>
+              </div>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-color); padding: 14px; border-radius: 12px; font-size: 13px;">
+              <span style="color: #f97316; font-weight: 700;">🎯 Recomendación IA:</span> Tus videos duran 7 min en promedio, mientras que los virales de tu nicho promedian 13 min. Se sugiere extender la duración para aumentar la retención.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="featTitle">Funcionalidades Diseñadas para Viralizar y Monetizar</h2>
+        <p class="section-desc" data-i18n="featSub">Todo lo que necesitas para optimizar la estructura de tus videos y superar a tus competidores.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3 class="feature-title" data-i18n="f1Title">📊 Overlay Flotante en YouTube</h3>
+          <p class="feature-text" data-i18n="f1Desc">Panel Glassmorphism inyectado en cualquier video con VPH en vivo, SEO score y botón de seguimiento en 1 clic.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title" data-i18n="f2Title">🚀 Métrica VPH en Tiempo Real</h3>
+          <p class="feature-text" data-i18n="f2Desc">Calcula cuántas vistas gana un video por hora para detectar qué temas están explotando antes que nadie.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title" data-i18n="f3Title">🎯 Calculador SEO Score (0-100)</h3>
+          <p class="feature-text" data-i18n="f3Desc">Evalúa títulos, riqueza de etiquetas, descripción y miniaturas para garantizar el máximo alcance orgánico.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📋</div>
+          <h3 class="feature-title" data-i18n="f4Title">📋 Copiador de Tags en 1 Clic</h3>
+          <p class="feature-text" data-i18n="f4Desc">Visualiza y copia al instante las etiquetas de los videos más virales de tu nicho para aplicarlas a tus contenidos.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🧬</div>
+          <h3 class="feature-title" data-i18n="f5Title">🧬 Análisis de Patrones Virales</h3>
+          <p class="feature-text" data-i18n="f5Desc">Descubre duraciones ideales, mejores días/horas de publicación y palabras clave con mayor conversión.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔥</div>
+          <h3 class="feature-title" data-i18n="f6Title">🔥 Buscador de Tendencias por País</h3>
+          <p class="feature-text" data-i18n="f6Desc">Descubre los videos en tendencia mundial o por país (España, México, EE.UU., etc.) consumiendo solo 1u de cuota.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competitor Comparison Section -->
+  <section id="comparison" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="compTitle">TrendPulse YT vs Aplicaciones Tradicionales</h2>
+        <p class="section-desc" data-i18n="compSub">Por qué los creadores inteligentes eligen TrendPulse YT frente a herramientas costosas.</p>
+      </div>
+
+      <div class="comparison-card">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th data-i18n="compColFeature">Característica / Función</th>
+              <th class="tp-col" data-i18n="compColTp">TrendPulse YT (PRO)</th>
+              <th data-i18n="compColVidiq">vidIQ (Pro/Boost)</th>
+              <th data-i18n="compColTubebuddy">TubeBuddy (Legend)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="compR1">Modelo de Pago</td>
+              <td class="tp-col" style="color: var(--green-success);" data-i18n="compR1Tp">Pago Único ($39 De Por Vida)</td>
+              <td class="check-no" data-i18n="compR1Vidiq">$49 - $149 / mes</td>
+              <td class="check-no" data-i18n="compR1Tubebuddy">$39 - $89 / mes</td>
+            </tr>
+            <tr>
+              <td data-i18n="compR2">Velocidad VPH en Tiempo Real</td>
+              <td class="tp-col check-yes" data-i18n="compR2Tp">✓ Incluido (Cualquier Video)</td>
+              <td class="check-no" data-i18n="compR2Vidiq">❌ Limitado / Solo propio</td>
+              <td class="check-no" data-i18n="compR2Tubebuddy">❌ No disponible</td>
+            </tr>
+            <tr>
+              <td data-i18n="compR3">Análisis de Patrones de Nicho</td>
+              <td class="tp-col check-yes" data-i18n="compR3Tp">✓ Incluido Automático</td>
+              <td class="check-no" data-i18n="compR3Vidiq">❌ Requiere plan Enterprise</td>
+              <td class="check-no" data-i18n="compR3Tubebuddy">❌ No disponible</td>
+            </tr>
+            <tr>
+              <td data-i18n="compR4">Copiador Directo de Tags</td>
+              <td class="tp-col check-yes" data-i18n="compR4Tp">✓ 1-Clic Ilimitado</td>
+              <td data-i18n="compR4Vidiq">✓ Limitado por plan</td>
+              <td data-i18n="compR4Tubebuddy">✓ Limitado por plan</td>
+            </tr>
+            <tr>
+              <td data-i18n="compR5">Privacidad & Datos Privados</td>
+              <td class="tp-col check-yes" data-i18n="compR5Tp">✓ 100% Datos Públicos API</td>
+              <td class="check-no" data-i18n="compR5Vidiq">⚠️ Requiere vinculación canal</td>
+              <td class="check-no" data-i18n="compR5Tubebuddy">⚠️ Requiere vinculación canal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="priceTitle">Planes Simples y Transparentes</h2>
+        <p class="section-desc" data-i18n="priceSub">Sin suscripciones mensuales ocultas. Elige la versión que mejor se adapte a tus necesidades.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Basic Plan -->
+        <div class="price-card">
+          <h3 class="price-title" data-i18n="pBasicTitle">Versión Básica</h3>
+          <p class="price-desc" data-i18n="pBasicDesc">Ideal para pequeños creadores que están comenzando.</p>
+          <div class="price-box">
+            <span class="price-amount" data-i18n="pBasicPrice">$25 USD</span>
+            <span class="price-period" data-i18n="pBasicPeriod">Pago Único De Por Vida</span>
+          </div>
+
+          <ul class="price-features">
+            <li data-i18n="pBasicF1">✓ Seguimiento de hasta 5 videos</li>
+            <li data-i18n="pBasicF2">✓ Overlay en YouTube con VPH</li>
+            <li data-i18n="pBasicF3">✓ Tabla Comparativa Básica</li>
+            <li data-i18n="pBasicF4">✓ Instalador 1-Clic Windows</li>
+            <li style="color: var(--text-muted);" data-i18n="pBasicF5">❌ Análisis de Patrones Virales</li>
+            <li style="color: var(--text-muted);" data-i18n="pBasicF6">❌ Buscador de Tendencias por País</li>
+          </ul>
+
+          <button class="btn btn-secondary btn-buy" data-plan="BASIC" data-i18n="pBasicBtn">Comprar Básica ($25)</button>
+        </div>
+
+        <!-- PRO Plan -->
+        <div class="price-card featured">
+          <div class="badge-pop" data-i18n="pProBadge">🔥 MÁS POPULAR - 50% OFF</div>
+          <h3 class="price-title" data-i18n="pProTitle">Versión PRO / Premium</h3>
+          <p class="price-desc" data-i18n="pProDesc">Para creadores serios y agencias que buscan maximizar ingresos.</p>
+          <div class="price-box">
+            <span class="price-amount" data-i18n="pProPrice">$50 USD</span>
+            <span class="price-period" data-i18n="pProPeriod">Pago Único De Por Vida (Normal $100)</span>
+          </div>
+
+          <ul class="price-features">
+            <li data-i18n="pProF1">✓ Seguimiento ILIMITADO de Videos</li>
+            <li data-i18n="pProF2">✓ Módulo de Patrones ("¿Por qué funciona?")</li>
+            <li data-i18n="pProF3">✓ Calculador SEO Score (0-100)</li>
+            <li data-i18n="pProF4">✓ Copiador de Tags en 1-Clic</li>
+            <li data-i18n="pProF5">✓ Buscador de Tendencias por País (1u)</li>
+            <li data-i18n="pProF6">✓ Sugerencias de Títulos y Keywords</li>
+            <li data-i18n="pProF7">✓ Notificaciones de Tendencias en Vivo</li>
+            <li data-i18n="pProF8">✓ Clave de Licencia PRO + Soporte VIP</li>
+          </ul>
+
+          <button class="btn btn-flame btn-buy" data-plan="PRO" data-i18n="pProBtn">🚀 Obtener Licencia PRO ($50)</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="faqTitle">Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span data-i18n="q1">¿Cómo recibo e instalo el software tras comprar?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer" data-i18n="a1">
+            Recibirás de inmediato un enlace para descargar `TrendPulse_YT_Setup.bat`. Al ejecutarlo en Windows, la extensión se instalará automáticamente en tu equipo en 1 clic.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span data-i18n="q2">¿Hay algún cobro mensual o suscripción?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer" data-i18n="a2">
+            No. TrendPulse YT es un pago único de por vida. No pagarás renovaciones mensuales ni tarifas ocultas.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span data-i18n="q3">¿Necesito una API Key de YouTube?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer" data-i18n="a3">
+            Sí, la extensión utiliza la API oficial de YouTube. En la guía te mostramos cómo obtener tu API Key gratuita de 10,000 unidades/día en solo 2 minutos.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span data-i18n="q4">¿Es seguro y cumple con las políticas de YouTube?</span>
+            <span>+</span>
+          </div>
+          <div class="faq-answer" data-i18n="a4">
+            100% seguro. Solo utiliza datos públicos oficiales de la API de YouTube v3 sin realizar scraping ni acceder a datos privados de otros canales.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footerText">© 2026 TrendPulse YT. Todos los derechos reservados. Diseñado para creadores de contenido de YouTube.</p>
+    </div>
+  </footer>
+
+  <!-- Checkout Modal -->
+  <div id="checkout-modal" class="modal-overlay hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 style="font-size: 18px; font-weight: 800;">🛒 Pasarela de Compra Segura</h3>
+        <button class="close-modal-btn" id="close-checkout-modal">✕</button>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <div style="font-weight: 700; font-size: 16px;" id="modal-plan-name">Licencia PRO (Vitalicia)</div>
+        <div style="font-size: 28px; font-weight: 900; color: var(--cyan-accent); margin: 6px 0;" id="modal-plan-price">$39 USD</div>
+        <p style="font-size: 13px; color: var(--text-muted);">Ingresa tu correo para recibir la clave de licencia y el instalador ejecutable.</p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+        <label style="font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Correo Electrónico de Entrega</label>
+        <input type="email" id="modal-email-input" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--border-color); background: #0b0f19; color: #fff; font-family: inherit;" placeholder="tu-correo@ejemplo.com" required>
+      </div>
+
+      <div style="display: flex; justify-content: flex-end; gap: 12px;">
+        <button class="btn btn-secondary" id="btn-cancel-checkout">Cancelar</button>
+        <button class="btn btn-flame" id="btn-confirm-checkout">Completar Compra</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
